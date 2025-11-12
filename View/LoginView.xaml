@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:lumentra.View"
         mc:Ignorable="d"
-        Title="LoginView" Height="450" Width="800">
-    <Grid>
+        Title="LoginView" Height="550" Width="800"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        MouseDown="Window_MouseDown"
+        Background="Transparent"
+        AllowsTransparency="True">
+
+    <Border BorderThickness="5"
+            CornerRadius="50">
         
-    </Grid>
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#ff00ff" Offset="0.0"/>
+                <GradientStop Color="#0000ff" Offset="0.75"/>
+                <GradientStop Color="#00ffff" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+
+        <Border.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#462ad8" Offset="0.0"/>
+                <GradientStop Color="#da34" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.Background>
+
+    </Border>
 </Window>
