@@ -13,6 +13,8 @@
         Background="Transparent"
         AllowsTransparency="True">
 
+    <Border>
+        
     <Border BorderThickness="5"
             CornerRadius="50">
         
@@ -31,5 +33,6 @@
             </LinearGradientBrush>
         </Border.Background>
 
+    </Border>
     </Border>
 </Window>
