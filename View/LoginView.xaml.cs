@@ -31,5 +31,16 @@ namespace lumentra.View
                 DragMove();
             }
         }
+
+        private void WinClose_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+        private void WinMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
     }
 }
