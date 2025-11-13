@@ -55,6 +55,13 @@
                         <ColumnDefinition Width="10"/>
                     </Grid.ColumnDefinitions>
 
+                    <TextBlock Grid.Column="0"
+                               VerticalAlignment="Center"
+                               Margin="15,0,0,0"
+                               FontSize="14"
+                               Foreground="AntiqueWhite"
+                               Text="Lumentra - Login"/>
+
                     <Button Grid.Column="2"
                             Content="&#xE8BB;"
                             FontFamily="Segoe MDL2 Assets"
@@ -123,6 +130,131 @@
                     </Button>
 
                 </Grid>
+
+                <StackPanel Width="250"
+                            Grid.Row="1"
+                            Orientation="Vertical"
+                            Margin="0,35,0,0">
+                    <Image Source="/lumentra;component/Assets/Images/LogoLumentra.png"
+                                   Width="100"
+                                   Height="100"
+                                   HorizontalAlignment="Center"
+                                   Margin="0,0,0,0"/>
+
+                    <TextBlock Text="Lumentra"
+                               FontSize="30"
+                               FontFamily="Times New Roman"
+                               HorizontalAlignment="Center"
+                               Margin="0,-5,0,5"
+                               Foreground="AntiqueWhite"/>
+
+                    <TextBlock Text="--- Where Ideas Find Light ---"
+                               FontSize="14"
+                               FontFamily="Garamond"
+                               HorizontalAlignment="Center"
+                               Margin="0,0,0,20"
+                               Foreground="LightGray"/>
+
+                    <TextBlock Text="Username"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"                             
+                               Margin="0,35,0,0"/>
+                    <TextBox x:Name="txtUser"
+                             FontSize="13"
+                             FontWeight="Medium"
+                             FontFamily="Montserrat"                            
+                             Foreground="White"
+                             CaretBrush="LightGray"
+                             BorderBrush="DarkGray"
+                             BorderThickness="0,0,0,2"
+                             Height="28"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="20,0,0,0">
+                        <TextBox.Background>
+                            <ImageBrush ImageSource="/lumentra;component/Assets/Images/UserIcon.png"
+                                        Stretch="Uniform"
+                                        AlignmentX="Left"
+                                        Viewport="2,5,16,16"
+                                        ViewportUnits="Absolute"/>
+                        </TextBox.Background>
+                    </TextBox>
+                    <TextBlock Text="Password"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"                             
+                               Margin="0,15,0,0"/>
+                    <PasswordBox x:Name="txtPass"
+                             FontSize="13"
+                             FontWeight="Medium"
+                             FontFamily="Montserrat"                            
+                             Foreground="White"
+                             CaretBrush="LightGray"
+                             BorderBrush="DarkGray"
+                             BorderThickness="0,0,0,2"
+                             Height="28"
+                             VerticalContentAlignment="Center"
+                             Margin="0,5,0,0"
+                             Padding="20,0,0,0">
+                        <PasswordBox.Background>
+                            <ImageBrush ImageSource="/lumentra;component/Assets/Images/PasswordIcon.png"
+                                        Stretch="Uniform"
+                                        AlignmentX="Left"
+                                        Viewport="2,5,16,16"
+                                        ViewportUnits="Absolute"/>
+                        </PasswordBox.Background>
+                    </PasswordBox>
+                    <Button x:Name="btnLogin"                          
+                            BorderThickness="0"
+                            Content="LOG IN"
+                            Foreground="White"
+                            FontSize="12"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"                           
+                            Margin="0,50,0,0"
+                            Click="btnLogin_Click">
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#462AD8"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#28AEED"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="150" Height="40"
+                                        CornerRadius="20"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Center"
+                                Margin="0,15,0,0">
+                        <TextBlock Text="Forgot Password?"
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"/>
+                        <TextBlock Text="Reset"
+                               Foreground="White"
+                               FontSize="12"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"
+                               Cursor="Hand"
+                               Margin="8,0,0,0"/>
+                    </StackPanel>
+
+                </StackPanel>
             </Grid>
         </Border>
     </Border>

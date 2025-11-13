@@ -10,6 +10,10 @@
 
   <ItemGroup>
     <None Remove="Assets\Images\LoginBackground.png" />
+    <None Remove="Assets\Images\Logo.png" />
+    <None Remove="Assets\Images\LogoLumentra.png" />
+    <None Remove="Assets\Images\PasswordIcon.png" />
+    <None Remove="Assets\Images\UserIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +23,18 @@
 
   <ItemGroup>
     <Resource Include="Assets\Images\LoginBackground.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\Logo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\LogoLumentra.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\PasswordIcon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\UserIcon.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
