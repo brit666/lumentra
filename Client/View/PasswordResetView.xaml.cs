@@ -15,18 +15,18 @@ using System.Windows.Shapes;
 namespace lumentra.View
 {
     /// <summary>
-    /// Interaction logic for LoginView.xaml
+    /// Interaction logic for PasswordResetView.xaml
     /// </summary>
-    public partial class LoginView : Window
+    public partial class PasswordResetView : Window
     {
-        public LoginView()
+        public PasswordResetView()
         {
             InitializeComponent();
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            if(e.LeftButton == MouseButtonState.Pressed)
+            if (e.LeftButton == MouseButtonState.Pressed)
             {
                 DragMove();
             }
@@ -42,21 +42,10 @@ namespace lumentra.View
             WindowState = WindowState.Minimized;
         }
 
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        private void btnNext_Click(object sender, RoutedEventArgs e)
         {
-            
-        }
-
-        private void click_signup(object sender, MouseButtonEventArgs e)
-        {
-            Window window = new SignupView();
-            window.Show();
-        }
-
-        private void TextBlock_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            Window window = new PasswordResetView();
-            window.Show();
+            MessageBox.Show("If the email you provided is associated with an account, you will receive password reset instructions shortly in your email.", "Password Reset", MessageBoxButton.OK, MessageBoxImage.Information);
+            Close();
         }
 
         private void txtEmail_TextChanged(object sender, TextChangedEventArgs e)
@@ -77,4 +66,6 @@ namespace lumentra.View
             txtEmailWarning.Visibility = isValid || string.IsNullOrWhiteSpace(tb.Text) ? Visibility.Collapsed : Visibility.Visible;
         }
     }
+
+
 }
