@@ -47,5 +47,10 @@ namespace lumentra.View
             
         }
 
+        private void click_signup(object sender, MouseButtonEventArgs e)
+        {
+            Window window = new SignupView();
+            window.Show();
+        }
     }
 }

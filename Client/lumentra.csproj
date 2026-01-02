@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\EmailIcon.png" />
     <None Remove="Assets\Images\LoginBackground.png" />
     <None Remove="Assets\Images\Logo.png" />
     <None Remove="Assets\Images\LogoLumentra.png" />
@@ -22,6 +23,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Images\EmailIcon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Assets\Images\LoginBackground.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>

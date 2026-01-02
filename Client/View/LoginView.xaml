@@ -155,7 +155,7 @@
                                Margin="0,0,0,20"
                                Foreground="LightGray"/>
 
-                    <TextBlock Text="Username"
+                    <TextBlock Text="Email"
                                Foreground="DarkGray"
                                FontSize="12"
                                FontWeight="Medium"
@@ -252,6 +252,20 @@
                                FontFamily="Montserrat"
                                Cursor="Hand"
                                Margin="8,0,0,0"/>
+                        <TextBlock Text=" | "
+                               Foreground="DarkGray"
+                               FontSize="12"
+                               Margin="12,0,12,0"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"/>
+                        <TextBlock Text="Sign Up"
+                                 Foreground="White"
+                                 FontSize="12"
+                                 FontWeight="Medium"
+                                 FontFamily="Montserrat"
+                                 Cursor="Hand"
+                                 Margin="8,0,0,0"
+                                 MouseLeftButtonDown="click_signup"/>
                     </StackPanel>
 
                 </StackPanel>
