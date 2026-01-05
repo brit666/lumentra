@@ -162,11 +162,18 @@
 
                 <!-- Main Gradient Background -->
                 <Border.Background>
-                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                        <GradientStop Color="#535151" Offset="0"/>
-                        <GradientStop Color="#191915" Offset="0.5"/>
-                        <GradientStop Color="#191919" Offset="1"/>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                        <!-- Slight shine at left -->
+                        <GradientStop Color="#2A2A2A" Offset="0"/>
+                        <GradientStop Color="#1F1F1F" Offset="0.3"/>
+
+                        <!-- Main dark color -->
+                        <GradientStop Color="#151515" Offset="0.7"/>
+
+                        <!-- Subtle shine at right -->
+                        <GradientStop Color="#1C1C1C" Offset="1"/>
                     </LinearGradientBrush>
+
                 </Border.Background>
 
                 <!-- Shadow -->
@@ -275,6 +282,20 @@
                                     <TextBlock Text="Profile"
                                                FontSize="24"
                                                FontWeight="Medium"/>
+                                </StackPanel>
+                            </Button>
+
+                            <Button Style="{StaticResource GlossySidebarButton}"
+                                    Margin="0,10,0,10">
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                    <TextBlock FontFamily="Segoe MDL2 Assets"
+                                               Text="&#xE898;"
+                                               FontSize="26"
+                                               Margin="0,0,14,0"/>
+                                    
+                                    <TextBlock Text="Uploads"
+                                           FontSize="24"
+                                           FontWeight="Medium"/>
                                 </StackPanel>
                             </Button>
                         </StackPanel>
