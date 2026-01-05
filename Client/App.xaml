@@ -7,6 +7,9 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/View/Styles/GlossyStyle.xaml"/>
+                <ResourceDictionary Source="/View/Styles/ChromeStyleScrollbar.xaml"/>
+                <ResourceDictionary Source="/View/Styles/WindowsStyleButton.xaml"/>
+                <ResourceDictionary Source="/View/Styles/TransparrentGlossyButton.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>
