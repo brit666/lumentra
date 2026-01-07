@@ -13,12 +13,12 @@
     <None Remove="Assets\Images\LoginBackground.png" />
     <None Remove="Assets\Images\Logo.png" />
     <None Remove="Assets\Images\LogoLumentra.png" />
+    <None Remove="Assets\Images\LumentraFeedBanner.png" />
     <None Remove="Assets\Images\PasswordIcon.png" />
     <None Remove="Assets\Images\UserIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
 
@@ -33,6 +33,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Images\LogoLumentra.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\LumentraFeedBanner.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Images\PasswordIcon.png">

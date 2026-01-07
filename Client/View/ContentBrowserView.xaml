@@ -328,7 +328,7 @@
                     </ScrollViewer.Resources>
                     <Grid>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="350"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
                         <StackPanel Grid.Row="0">
@@ -375,9 +375,53 @@
 
                                 </Grid>
                             </Border>
-                            
+                            <Border BorderThickness="1"
+                                    CornerRadius="10"
+                                    Height="300"
+                                    HorizontalAlignment="Stretch"
+                                    Padding="10"
+                                    Margin="50,10,50,0">
+                                <Border.Effect>
+                                    <DropShadowEffect Color="Black"
+                                                      BlurRadius="15"
+                                                      ShadowDepth="5"
+                                                      Opacity="0.4"
+                                                      Direction="270"/>
+                                </Border.Effect>
+
+                                <Border.Background>
+                                    <ImageBrush ImageSource="/lumentra;component/Assets/Images/LumentraFeedBanner.png"
+                                                Stretch="Fill"/>
+                                </Border.Background>
+
+                                <Button Content="Explore Now"
+                                        Width="150"
+                                        Height="40"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Bottom"
+                                        Margin="15,0,0,20"
+                                        Background="Blue"
+                                        Foreground="White"
+                                        FontWeight="Bold"
+                                        BorderThickness="0"
+                                        Cursor="Hand"
+                                        Template="{StaticResource PlainRoundedButton}">
+                                    <Button.Effect>
+                                        <DropShadowEffect Color="Black"
+                                                          BlurRadius="8"
+                                                          ShadowDepth="2"
+                                                          Opacity="0.5"/>
+                                    </Button.Effect>
+                                </Button>
+                            </Border>
                         </StackPanel>
-                        
+                        <StackPanel Grid.Row="1">
+                            <TextBlock Text="Recommendations"
+                                       FontSize="26"
+                                       FontWeight="SemiBold"
+                                       Foreground="White"
+                                       Margin="20,20,0,10"/>
+                        </StackPanel>
                     </Grid>
 
                 </ScrollViewer>
