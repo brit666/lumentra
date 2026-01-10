@@ -2,7 +2,7 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:lumentra"
-             StartupUri="view/ContentBrowserView.xaml">
+             StartupUri="view/LoginView.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -10,6 +10,9 @@
                 <ResourceDictionary Source="/View/Styles/ChromeStyleScrollbar.xaml"/>
                 <ResourceDictionary Source="/View/Styles/WindowsStyleButton.xaml"/>
                 <ResourceDictionary Source="/View/Styles/TransparrentGlossyButton.xaml"/>
+                <ResourceDictionary Source="/View/Styles/LogoutButtonStyle.xaml"/>
+                <ResourceDictionary Source="/View/Styles/GlassButtonStyle.xaml"/>
+                <ResourceDictionary Source="/View/Styles/SearchBoxStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

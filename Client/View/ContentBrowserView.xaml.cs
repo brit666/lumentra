@@ -1,4 +1,5 @@
-﻿using System;
+﻿using lumentra.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,20 @@ namespace lumentra.View
         public ContentBrowserView()
         {
             InitializeComponent();
+
+            Video video =
+            (
+                new Video
+                {
+                    VideoId = "1",
+                    VideoTitle = "Sample Video",
+                    VideoDescription = "This is a sample video description.",
+                    VideoDuration = TimeSpan.FromMinutes(5),
+                    VideoUrl = "http://example.com/samplevideo",
+                    UploadDate = DateTime.Now,
+                    ThumbnailUrl = "placeholderText"
+                }
+            );
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)

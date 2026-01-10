@@ -41,7 +41,9 @@ namespace lumentra.View
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            
+            Window window = new MainFeedView();
+            window.Show();
+            this.Close();
         }
 
         private void click_signup(object sender, MouseButtonEventArgs e)

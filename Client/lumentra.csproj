@@ -9,10 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Images\AbstractLogo.png" />
+    <None Remove="Assets\Images\AbstractLogoPNG.png" />
     <None Remove="Assets\Images\EmailIcon.png" />
+    <None Remove="Assets\Images\Feedbanner.jpg" />
     <None Remove="Assets\Images\LoginBackground.png" />
     <None Remove="Assets\Images\Logo.png" />
     <None Remove="Assets\Images\LogoLumentra.png" />
+    <None Remove="Assets\Images\LogoModified.png" />
     <None Remove="Assets\Images\LumentraFeedBanner.png" />
     <None Remove="Assets\Images\PasswordIcon.png" />
     <None Remove="Assets\Images\UserIcon.png" />
@@ -23,7 +27,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Images\AbstractLogo.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\AbstractLogoPNG.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Assets\Images\EmailIcon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\Feedbanner.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Images\LoginBackground.png">
@@ -33,6 +46,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Images\LogoLumentra.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\LogoModified.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Images\LumentraFeedBanner.png">

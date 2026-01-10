@@ -8,10 +8,11 @@ namespace lumentra.Model
 {
     class Video
     {
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public TimeSpan Duration { get; set; }
-        public string Url { get; set; }
+        public string VideoId { get; set; }
+        public string VideoTitle { get; set; }
+        public string VideoDescription { get; set; }
+        public TimeSpan VideoDuration { get; set; }
+        public string VideoUrl { get; set; }
         public DateTime UploadDate { get; set; }
         public string ThumbnailUrl { get; set; }
     }
