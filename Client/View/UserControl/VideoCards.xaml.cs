@@ -1,4 +1,5 @@
-﻿using System;
+﻿using lumentra.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,5 +27,16 @@ namespace lumentra.View.UserControl
 
 
         }
+        private void Border_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            // Raise an event with this card's data
+            if (DataContext is FeedVideoModel video)
+            {
+                VideoClicked?.Invoke(this, video);
+            }
+        }
+
+        // Custom event to pass the clicked video
+        public event EventHandler<FeedVideoModel> VideoClicked;
     }
 }

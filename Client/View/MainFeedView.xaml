@@ -3,22 +3,23 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:UserControl="clr-namespace:lumentra.View.UserControl"
         xmlns:local="clr-namespace:lumentra.View"
         mc:Ignorable="d"
         Title="Lumentra" Height="450" Width="800"
-        ThemeMode="System"
+        ThemeMode="Dark"
         WindowState="Maximized">
     <Grid Background="#1A1A1A">
         <Grid.RowDefinitions>
+            <RowDefinition Height="7*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="90"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="260"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
 
             <Grid Grid.Column="0">
@@ -34,11 +35,20 @@
                            RenderOptions.BitmapScalingMode="HighQuality"
                            Margin="15,0,5,0"
                            Height="30"/>
-                    <TextBlock Text="Lumentra"
+                    <TextBlock Text="lumentra"
                                VerticalAlignment="Center"
                                FontSize="30"
-                               FontWeight="Bold"
-                               Foreground="FloralWhite"/>
+                               FontStyle="Italic"
+                               FontWeight="Bold">
+                        <TextBlock.Foreground>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Color="#FF4169E1" Offset="0.0"/>
+                                <!-- Royal Blue -->
+                                <GradientStop Color="#FF8A2BE2" Offset="1.0"/>
+                                <!-- Blue Violet -->
+                            </LinearGradientBrush>
+                        </TextBlock.Foreground>
+                    </TextBlock>
                 </StackPanel>
 
                 
@@ -139,54 +149,130 @@
             <Grid Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="50"/>
-                    <RowDefinition Height="270"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <TextBox Style="{StaticResource ChromeSearchBox}" 
                          Width="400" 
                          Height="40" 
-                         
                          VerticalAlignment="Center"/>
 
                 <ScrollViewer Grid.Row="1">
                     <ScrollViewer.Resources>
                         <Style TargetType="ScrollBar" BasedOn="{StaticResource ChromeScrollBar}"/>
                     </ScrollViewer.Resources>
-                    <Border CornerRadius="15" 
+                    <StackPanel Orientation="Vertical">
+                        <Border CornerRadius="15" Height="250"
                             Margin="20" ClipToBounds="True">
-                        <Border.Effect>
-                            <DropShadowEffect BlurRadius="20" ShadowDepth="5" Opacity="0.4"/>
-                        </Border.Effect>
+                            <Border.Effect>
+                                <DropShadowEffect BlurRadius="20" ShadowDepth="5" Opacity="0.4"/>
+                            </Border.Effect>
 
-                        <Border.Background>
-                            <ImageBrush ImageSource="/lumentra;component/Assets/Images/Feedbanner.jpg"
+                            <Border.Background>
+                                <ImageBrush ImageSource="/lumentra;component/Assets/Images/Feedbanner.jpg"
                                         Stretch="UniformToFill"
                                         Viewbox="0,0.01,1,1"
                                         ViewboxUnits="RelativeToBoundingBox"/>
-                        </Border.Background>
-                        <StackPanel VerticalAlignment="Bottom" Margin="20">
-                            <TextBlock Text="PREMIUM EXPERIENCE" Foreground="#FF4169E1" FontWeight="Bold" FontSize="12"/>
-                            <TextBlock Text="Unlock Exclusive Contents" Foreground="DimGray" FontSize="24" FontWeight="Bold"/>
-                            <Button Content="Subscribe Now" Style="{StaticResource LogoutButtonStyle}" Width="140" HorizontalAlignment="Left" Margin="0,10,0,0"/>
-                        </StackPanel>
+                            </Border.Background>
+                            <StackPanel VerticalAlignment="Bottom" Margin="20">
+                                <TextBlock Text="PREMIUM EXPERIENCE" Foreground="#FF4169E1" FontWeight="Bold" FontSize="12"/>
+                                <TextBlock Text="Unlock Exclusive Contents" Foreground="DimGray" FontSize="24" FontWeight="Bold"/>
+                                <Button Content="Subscribe Now" Style="{StaticResource LogoutButtonStyle}" Width="140" HorizontalAlignment="Left" Margin="0,10,0,0"/>
+                            </StackPanel>
 
-                    </Border>
-                    
-                    
+                        </Border>
+
+                        <TextBlock Text="Recommended for You"
+                                   FontSize="20"
+                                   FontWeight="SemiBold"
+                                   Foreground="White"
+                                   Margin="20,10,0,10"/>
+
+                        <ItemsControl x:Name ="VideoFeed">
+                            <ItemsControl.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel Orientation="Horizontal"/>
+                                </ItemsPanelTemplate>
+                            </ItemsControl.ItemsPanel>
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate>
+                                    <UserControl:VideoCards/>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+                    </StackPanel>
                 </ScrollViewer>
-                
+            </Grid>
+            <Grid Grid.Column="2">
+                <Border CornerRadius="10"
+                        VerticalAlignment="Stretch"
+                        HorizontalAlignment="Stretch"
+                        Margin="8"
+                        MaxHeight="800">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#FF1A1A1A" Offset="0.0"/>
+                            <GradientStop Color="#FF121212" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
 
-
+                    <StackPanel>
+                        <Border CornerRadius="8"
+                                Margin="2,2,2,2"
+                                Height="150">
+                            <Border.Background>
+                                <ImageBrush x:Name="CourseThumbnail"
+                                    />
+                            </Border.Background>
+                        </Border>
+                        <TextBlock x:Name="CourseTitle"
+                                   Text="Learn C#"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   Foreground="FloralWhite"/>
+                        <TextBlock x:Name="CourseAuthor"
+                                   Text="Learn with Mike"
+                                   FontSize="15"
+                                   Foreground="#AAAAAA"
+                                   FontWeight="Light"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock x:Name="CourseViews"
+                                       Text="120K"
+                                       FontSize="12"
+                                       Foreground="#777777"/>
+                            <TextBlock Text=" • "
+                                       FontSize="12"
+                                       Foreground="#777777"/>
+                            <TextBlock x:Name="CourseRatings"
+                                       Text="9.9/10"
+                                       FontSize="12"
+                                       Foreground="#777777"/>
+                            <TextBlock Text=" • "
+                                       FontSize="12"
+                                       Foreground="#777777"/>
+                            <TextBlock x:Name="CourseDuration"
+                                       Text="4 Hours"
+                                       Foreground="#777777"
+                                       FontSize="12"/>
+                        </StackPanel>
+                        <Button Content="Buy Now"
+                                Style="{StaticResource LogoutButtonStyle}"
+                                Width="90"
+                                Height="35"
+                                HorizontalAlignment="Right"
+                                Margin="0,30,5,0"/>
+                    </StackPanel>
+                </Border>
             </Grid>
         </Grid>
         <Border Grid.Row="1"
                 CornerRadius="20"
-                Margin="0,0,0,10">
+                Margin="0,0,0,10"
+                MaxHeight="70">
             <Border.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
                     <GradientStop Color="#FF4169E1" Offset="0.0"/>
                     <!-- Royal Blue -->
-                    <GradientStop Color="#FF8A2BE2" Offset="1.0"/>
+                    <GradientStop Color="#FFF34F67" Offset="1.0"/>
                     <!-- Blue Violet -->
                 </LinearGradientBrush>
             </Border.Background>

@@ -1,7 +1,10 @@
-﻿using System;
+﻿using lumentra.Model;
+using lumentra.View.UserControl;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -22,23 +25,30 @@ namespace lumentra.View
         public MainFeedView()
         {
             InitializeComponent();
+            FeedVideoFetcher();
         }
 
-        /*private void SearchBox_GotFocus(object sender, RoutedEventArgs e)
+        private void FeedVideoFetcher()
         {
-            if (SearchBox.Text == "Search...")
-                SearchBox.Text = "";
+            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
+            var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
+
+            VideoFeed.ItemsSource = videos;
+
+            
         }
 
-        private void SearchBox_LostFocus(object sender, RoutedEventArgs e)
+        private void VideoCard_Clicked(object sender, FeedVideoModel video)
         {
-            if (string.IsNullOrWhiteSpace(SearchBox.Text))
-                SearchBox.Text = "Search...";
+            // Example: populate some TextBoxes on the side
+            CourseTitle.Text = video.VideoTitle;
+            CourseAuthor.Text = video.VideoAuthor;
+            CourseViews.Text = video.VideoViews;
+            CourseRatings.Text = video.VideoRatings;
+
+
+            // Optional: show the thumbnail
+            CourseThumbnail.ImageSource = new BitmapImage(new Uri(video.VideoThumbnailUrl, UriKind.RelativeOrAbsolute));
         }
-
-        private void SearchButton_Click(object sender, RoutedEventArgs e)
-        {
-
-        }*/
     }
 }

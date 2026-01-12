@@ -20,10 +20,15 @@
     <None Remove="Assets\Images\LumentraFeedBanner.png" />
     <None Remove="Assets\Images\PasswordIcon.png" />
     <None Remove="Assets\Images\UserIcon.png" />
+    <None Remove="VideoThumbnails\csharpVideo.jpg" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="ViewModel\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="10.0.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -58,6 +63,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\Images\UserIcon.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\csharpVideo.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
