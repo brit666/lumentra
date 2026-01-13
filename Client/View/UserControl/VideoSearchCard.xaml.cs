@@ -18,7 +18,7 @@ namespace lumentra.View.UserControl
     /// <summary>
     /// Interaction logic for VideoSearchCard.xaml
     /// </summary>
-    public partial class VideoSearchCard : UserControl
+    public partial class VideoSearchCard
     {
         public VideoSearchCard()
         {
