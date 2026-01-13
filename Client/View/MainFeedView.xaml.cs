@@ -17,9 +17,6 @@ using System.Windows.Shapes;
 
 namespace lumentra.View
 {
-    /// <summary>
-    /// Interaction logic for MainFeedView.xaml
-    /// </summary>
     public partial class MainFeedView : Window
     {
         public MainFeedView()
@@ -40,7 +37,6 @@ namespace lumentra.View
 
         private void VideoCard_Clicked(FeedVideoModel video)
         {
-            // Example: populate some TextBoxes on the side
             CourseTitle.Text = video.VideoTitle;
             CourseAuthor.Text = video.VideoAuthor;
             CourseViews.Text = video.VideoViews;
@@ -54,7 +50,6 @@ namespace lumentra.View
             BuyNow_Button.Visibility = Visibility.Visible;
             CourseInfo.Visibility = Visibility.Visible;
 
-            // Optional: show the thumbnail
             CourseThumbnail.ImageSource = new BitmapImage(new Uri(video.VideoThumbnailUrl, UriKind.RelativeOrAbsolute));
         }
 
