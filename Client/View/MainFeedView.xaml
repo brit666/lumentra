@@ -195,7 +195,7 @@
                             </ItemsControl.ItemsPanel>
                             <ItemsControl.ItemTemplate>
                                 <DataTemplate>
-                                    <UserControl:VideoCards/>
+                                    <UserControl:VideoCards Loaded="VideoCards_Loaded"/>
                                 </DataTemplate>
                             </ItemsControl.ItemTemplate>
                         </ItemsControl>
@@ -225,41 +225,72 @@
                             </Border.Background>
                         </Border>
                         <TextBlock x:Name="CourseTitle"
-                                   Text="Learn C#"
                                    FontSize="20"
                                    FontWeight="Bold"
                                    Foreground="FloralWhite"/>
                         <TextBlock x:Name="CourseAuthor"
-                                   Text="Learn with Mike"
                                    FontSize="15"
                                    Foreground="#AAAAAA"
                                    FontWeight="Light"/>
                         <StackPanel Orientation="Horizontal">
                             <TextBlock x:Name="CourseViews"
-                                       Text="120K"
                                        FontSize="12"
                                        Foreground="#777777"/>
-                            <TextBlock Text=" • "
+                            <TextBlock x:Name="CourseSeparator1"
+                                       Text=" • "
                                        FontSize="12"
-                                       Foreground="#777777"/>
+                                       Foreground="#777777"
+                                       Visibility="Collapsed"/>
                             <TextBlock x:Name="CourseRatings"
-                                       Text="9.9/10"
                                        FontSize="12"
                                        Foreground="#777777"/>
-                            <TextBlock Text=" • "
+                            <TextBlock x:Name="CourseSeparator2"
+                                       Text=" • "
                                        FontSize="12"
-                                       Foreground="#777777"/>
+                                       Foreground="#777777"
+                                       Visibility="Collapsed"/>
                             <TextBlock x:Name="CourseDuration"
-                                       Text="4 Hours"
                                        Foreground="#777777"
                                        FontSize="12"/>
                         </StackPanel>
-                        <Button Content="Buy Now"
+                        <Button x:Name="BuyNow_Button"
+                                Content="Buy Now"
                                 Style="{StaticResource LogoutButtonStyle}"
                                 Width="90"
                                 Height="35"
                                 HorizontalAlignment="Right"
-                                Margin="0,30,5,0"/>
+                                Margin="0,30,5,0"
+                                Click="BuyNow_Button_Click"
+                                Visibility="Collapsed"/>
+                        
+                        <StackPanel Margin="0,10,0,0"
+                                    x:Name="CourseInfo"
+                                    Visibility="Collapsed">
+                            <TextBlock Text="Course Description"
+                                       FontSize="16"
+                                       FontWeight="SemiBold"
+                                       Foreground="White"/>
+                            <TextBlock x:Name="CourseDescription"
+                                       FontSize="12"
+                                       Text="Anything"/>
+                            <Border CornerRadius="8"
+                                    HorizontalAlignment="Left"
+                                    Padding="10,5">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="#FF4169E1" Offset="0.0"/>
+                                        <!-- Royal Blue -->
+                                        <GradientStop Color="#FF8A2BE2" Offset="1.0"/>
+                                        <!-- Blue Violet -->
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                                    
+                            <StackPanel Orientation="Horizontal">
+                                    <TextBlock x:Name="CoursePrice"
+                                               FontSize="16"/>
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
                     </StackPanel>
                 </Border>
             </Grid>

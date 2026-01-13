@@ -38,17 +38,37 @@ namespace lumentra.View
             
         }
 
-        private void VideoCard_Clicked(object sender, FeedVideoModel video)
+        private void VideoCard_Clicked(FeedVideoModel video)
         {
             // Example: populate some TextBoxes on the side
             CourseTitle.Text = video.VideoTitle;
             CourseAuthor.Text = video.VideoAuthor;
             CourseViews.Text = video.VideoViews;
             CourseRatings.Text = video.VideoRatings;
+            CourseDescription.Text = video.VideoDescription;
+            CoursePrice.Text = video.VideoPrice;
+            CourseDuration.Text = video.VideoDuration;
 
+            CourseSeparator1.Visibility = Visibility.Visible;
+            CourseSeparator2.Visibility = Visibility.Visible;
+            BuyNow_Button.Visibility = Visibility.Visible;
+            CourseInfo.Visibility = Visibility.Visible;
 
             // Optional: show the thumbnail
             CourseThumbnail.ImageSource = new BitmapImage(new Uri(video.VideoThumbnailUrl, UriKind.RelativeOrAbsolute));
+        }
+
+        private void VideoCards_Loaded(object sender, RoutedEventArgs e)
+        {
+            if(sender is VideoCards vc)
+            {
+                vc.VideoClicked += VideoCard_Clicked;
+            }
+        }
+
+        private void BuyNow_Button_Click(object sender, RoutedEventArgs e)
+        {
+            CourseInfo.Visibility = Visibility.Visible;
         }
     }
 }
