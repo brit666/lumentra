@@ -3,6 +3,7 @@ using lumentra.View.UserControl;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -64,6 +65,70 @@ namespace lumentra.View
         private void BuyNow_Button_Click(object sender, RoutedEventArgs e)
         {
             CourseInfo.Visibility = Visibility.Visible;
+        }
+
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new MainFeedView();
+            this.Top = window.Top;
+            window.Show();
+            this.Close();
+        }
+
+        private void ExploreButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new ExploreView();
+            this.Top = window.Top;
+            window.Show();
+            this.Close();
+        }
+
+        private void NotificationButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ProfileButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CollectionButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void UploadButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LogoutButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new LoginView();
+            this.Top = window.Top;
+            window.Show();
+            this.Close();
+        }
+
+        private void SubscribeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window window = new ExploreView();
+            this.Top = window.Top;
+            window.Show();
+            this.Close();
+        }
+
+        private void SearchBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                string query = SearchBox.Text;
+                Window window = new ExploreView(query);
+                this.Top = window.Top;
+                window.Show();
+                this.Close();
+            }
         }
     }
 }
