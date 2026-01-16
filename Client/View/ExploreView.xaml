@@ -12,14 +12,15 @@
 
     <Grid Background="#1A1A1A">
         <Grid.RowDefinitions>
-            <RowDefinition Height="7*"/>
+            <RowDefinition Height="*"/>
 
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="12*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
 
             <Grid Grid.Column="0">
@@ -55,7 +56,8 @@
 
                 <StackPanel Grid.Row="1">
                     <Button Style="{StaticResource GlossySidebarButton}"
-                                Margin="0,60,0,10">
+                                Margin="0,60,0,10"
+                            Click="HomeButton_Click">
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
                                            Text="&#xE80F;"
@@ -68,7 +70,8 @@
                         </StackPanel>
                     </Button>
                     <Button Style="{StaticResource GlossySidebarButton}"
-                                Margin="0,10,0,10">
+                                Margin="0,10,0,10"
+                            Click="ExploreButton_Click">
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
                                                        Text="&#xE721;"
@@ -81,7 +84,8 @@
                         </StackPanel>
                     </Button>
                     <Button Style="{StaticResource GlossySidebarButton}"
-                                Margin="0,10,0,10" FontSize="28">
+                                Margin="0,10,0,10" FontSize="28"
+                            Click="NotificationButton_Click">
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
                                            Text="&#xE7EE;"
@@ -94,7 +98,8 @@
                         </StackPanel>
                     </Button>
                     <Button Style="{StaticResource GlossySidebarButton}"
-                                Margin="0,10,0,10">
+                                Margin="0,10,0,10"
+                            Click="ProfileButton_Click">
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
                                            Text="&#xE77B;"
@@ -108,7 +113,8 @@
                     </Button>
 
                     <Button Style="{StaticResource GlossySidebarButton}"
-                                Margin="0,10,0,10">
+                                Margin="0,10,0,10"
+                            Click="CollectionButton_Click">
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
                                            Text="&#xE14C;"
@@ -122,7 +128,8 @@
                     </Button>
 
                     <Button Style="{StaticResource GlossySidebarButton}"
-                                Margin="0,10,0,10">
+                                Margin="0,10,0,10"
+                            Click="UploadButton_Click">
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                             <TextBlock FontFamily="Segoe MDL2 Assets"
                                            Text="&#xE898;"
@@ -139,7 +146,8 @@
                 <Button Grid.Row="2"
                         Style="{StaticResource LogoutButtonStyle}"
                         Width="150"
-                        Height="40">
+                        Height="40"
+                        Click="LogoutButton_Click">
                     <TextBlock Text="Logout"
                                FontSize="16"
                                FontWeight="SemiBold"/>
@@ -151,10 +159,12 @@
                     <RowDefinition Height="50"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <TextBox Style="{StaticResource ChromeSearchBox}" 
+                <TextBox x:Name="SearchBox"
+                         Style="{StaticResource ChromeSearchBox}" 
                          Width="400" 
                          Height="40" 
-                         VerticalAlignment="Center"/>
+                         VerticalAlignment="Center"
+                         KeyDown="SearchBox_KeyDown"/>
                 <Grid Grid.Row="1">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -162,83 +172,226 @@
                     </Grid.RowDefinitions>
                     <WrapPanel Grid.Row="0">
                         <Button Style="{StaticResource CategoryButtonStyle}"
-                                Content="Photography"
+                                Content="Programming &amp; Tech"
                                 Height="60"
                                 Width="200"
                                 FontSize="17"
                                 HorizontalAlignment="Center"
-                                Margin="10,10,10,10"/>
+                                Margin="10,10,10,10"
+                                Click="ProgrammingButton_Click"/>
                         <Button Style="{StaticResource CategoryButtonStyle}"
-                                Content="Photography"
+                                Content="Education"
                                 Height="60"
                                 Width="200"
                                 FontSize="17"
                                 HorizontalAlignment="Center"
-                                Margin="10,10,10,10"/>
+                                Margin="10,10,10,10"
+                                Click="EducationButton_Click"/>
                         <Button Style="{StaticResource CategoryButtonStyle}"
-                                Content="Photography"
+                                Content="Photography &amp; Videography"
                                 Height="60"
                                 Width="200"
-                                FontSize="17"
+                                FontSize="14"
                                 HorizontalAlignment="Center"
-                                Margin="10,10,10,10"/>
+                                Margin="10,10,10,10"
+                                Click="PhotographyButton_Click"/>
                         <Button Style="{StaticResource CategoryButtonStyle}"
-                                Content="Photography"
+                                Content="Science &amp; Engineering"
                                 Height="60"
                                 Width="200"
                                 FontSize="17"
                                 HorizontalAlignment="Center"
-                                Margin="10,10,10,10"/>
+                                Margin="10,10,10,10"
+                                Click="ScienceButton_Click"/>
                         <Button Style="{StaticResource CategoryButtonStyle}"
-                                Content="Photography"
+                                Content="Productivity &amp; Career Advice"
                                 Height="60"
                                 Width="200"
-                                FontSize="17"
+                                FontSize="14"
                                 HorizontalAlignment="Center"
-                                Margin="10,10,10,10"/>
+                                Margin="10,10,10,10"
+                                Click="ProductivityButton_Click"/>
                         <Button Style="{StaticResource CategoryButtonStyle}"
-                                Content="Photography"
+                                Content="Business &amp; Finanance"
                                 Height="60"
                                 Width="200"
                                 FontSize="17"
                                 HorizontalAlignment="Center"
-                                Margin="10,10,10,10"/>
+                                Margin="10,10,10,10"
+                                Click="BusinessButton_Click"/>
                         <Button Style="{StaticResource CategoryButtonStyle}"
-                                Content="Photography"
+                                Content="Cooking &amp; Food"
                                 Height="60"
                                 Width="200"
                                 FontSize="17"
                                 HorizontalAlignment="Center"
-                                Margin="10,10,10,10"/>
+                                Margin="10,10,10,10"
+                                Click="CookingButton_Click"/>
                         <Button Style="{StaticResource CategoryButtonStyle}"
-                                Content="Photography"
+                                Content="Art &amp; Design"
                                 Height="60"
                                 Width="200"
                                 FontSize="17"
                                 HorizontalAlignment="Center"
-                                Margin="10,10,10,10"/>
+                                Margin="10,10,10,10"
+                                Click="ArtButton_Click"/>
                         <Button Style="{StaticResource CategoryButtonStyle}"
-                                Content="Photography"
+                                Content="Music"
                                 Height="60"
                                 Width="200"
                                 FontSize="17"
                                 HorizontalAlignment="Center"
-                                Margin="10,10,10,10"/>
+                                Margin="10,10,10,10"
+                                Click="MusicButton_Click"/>
                         <Button Style="{StaticResource CategoryButtonStyle}"
-                                Content="Photography"
+                                Content="Sports &amp; Fitness"
                                 Height="60"
                                 Width="200"
                                 FontSize="17"
                                 HorizontalAlignment="Center"
-                                Margin="10,10,10,10"/>
+                                Margin="10,10,10,10"
+                                Click="SportsButton_Click"/>
 
                     </WrapPanel>
 
                     <Grid Grid.Row="1">
-                        
+                        <ScrollViewer>
+                            <ScrollViewer.Resources>
+                                <Style TargetType="ScrollBar" BasedOn="{StaticResource ChromeScrollBar}"/>
+                            </ScrollViewer.Resources>
+                            <StackPanel>
+
+                                <StackPanel Orientation="Horizontal"
+                                        Margin="10,0,0,10"
+                                        Height="30"
+                                        VerticalAlignment="Top">
+                                    <TextBlock Text="Search results for "
+                                               FontSize="20"
+                                               Foreground="FloralWhite"/>
+                                    <TextBlock x:Name="SearchQueryText"
+                                               Text="Popular"
+                                               FontStyle="Italic"
+                                               FontSize="20"
+                                               Foreground="FloralWhite"/>
+
+                                </StackPanel>
+                                <TextBlock x:Name="NoResultsText"
+                                           Text="No results found."
+                                           FontSize="16"
+                                           Foreground="Gray"
+                                           HorizontalAlignment="Center"
+                                           Visibility="Collapsed"
+                                           Margin="0,20,0,0"/>
+
+                                <ItemsControl x:Name ="VideoFeed">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <WrapPanel Orientation="Horizontal"/>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <UserControl:VideoCards Loaded="VideoCards_Loaded"/>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+
+                            </StackPanel>
+                        </ScrollViewer>
                     </Grid>
                 </Grid>
 
+            </Grid>
+            <Grid Grid.Column="2">
+                <Border CornerRadius="10"
+                        VerticalAlignment="Stretch"
+                        HorizontalAlignment="Stretch"
+                        Margin="8"
+                        MaxHeight="800">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#FF1A1A1A" Offset="0.0"/>
+                            <GradientStop Color="#FF121212" Offset="1.0"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+
+                    <StackPanel>
+                        <Border CornerRadius="8"
+                                Margin="2,2,2,2"
+                                Height="150">
+                            <Border.Background>
+                                <ImageBrush x:Name="CourseThumbnail"/>
+                            </Border.Background>
+                        </Border>
+                        <TextBlock x:Name="CourseTitle"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   Foreground="FloralWhite"/>
+                        <TextBlock x:Name="CourseAuthor"
+                                   FontSize="15"
+                                   Foreground="#AAAAAA"
+                                   FontWeight="Light"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock x:Name="CourseViews"
+                                       FontSize="12"
+                                       Foreground="#777777"/>
+                            <TextBlock x:Name="CourseSeparator1"
+                                       Text=" • "
+                                       FontSize="12"
+                                       Foreground="#777777"
+                                       Visibility="Collapsed"/>
+                            <TextBlock x:Name="CourseRatings"
+                           FontSize="12"
+                           Foreground="#777777"/>
+                            <TextBlock x:Name="CourseSeparator2"
+                                       Text=" • "
+                                       FontSize="12"
+                                       Foreground="#777777"
+                                       Visibility="Collapsed"/>
+                            <TextBlock x:Name="CourseDuration"
+                                       Foreground="#777777"
+                                       FontSize="12"/>
+                        </StackPanel>
+                        <Button x:Name="BuyNow_Button"
+                                Content="Buy Now"
+                                Style="{StaticResource LogoutButtonStyle}"
+                                Width="90"
+                                Height="35"
+                                HorizontalAlignment="Right"
+                                Margin="0,30,5,0"
+                                Click="BuyNow_Button_Click"
+                                Visibility="Collapsed"/>
+
+                        <StackPanel Margin="0,10,0,0"
+                                    x:Name="CourseInfo"
+                                    Visibility="Collapsed">
+                            <TextBlock Text="Course Description"
+                                       FontSize="16"
+                                       FontWeight="SemiBold"
+                                       Foreground="White"/>
+                            <TextBlock x:Name="CourseDescription"
+                                       FontSize="12"
+                                       Text="Anything"/>
+                            <Border CornerRadius="8"
+                                    HorizontalAlignment="Left"
+                                    Padding="10,5">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                        <GradientStop Color="#FF4169E1" Offset="0.0"/>
+                                        <!-- Royal Blue -->
+                                        <GradientStop Color="#FF8A2BE2" Offset="1.0"/>
+                                        <!-- Blue Violet -->
+                                    </LinearGradientBrush>
+                                </Border.Background>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock x:Name="CoursePrice"
+                                   FontSize="16"/>
+                                </StackPanel>
+                            </Border>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
             </Grid>
         </Grid>
     </Grid>

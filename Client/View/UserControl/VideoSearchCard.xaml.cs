@@ -24,5 +24,11 @@ namespace lumentra.View.UserControl
         {
             InitializeComponent();
         }
+
+        private void Border_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+          
+        }   
     }
+
 }

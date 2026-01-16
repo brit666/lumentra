@@ -1,265 +1,268 @@
 [
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": true,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
 
 	{
-		"VideoTitle" : "Learn C# with Mike",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "140k",
-		"VideoRatings" : "9.2/10",
-		"VideoPrice" : "$10.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C# with mike",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": true,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+	},
+	{
+		"VideoTitle": "Learn C# with devil",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with devil",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": true,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+	},
+	{
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
 
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	},
-
 	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
-	},
-
-	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
-	},
-
-	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
-	},
-
-	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
-	},
-
-	{
-		"VideoTitle" : "Learn C#",
-		"VideoThumbnailUrl" : "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
-		"VideoAuthor" : "Learn with Mike",
-		"VideoDuration" : "4 Hours",
-		"VideoViews" : "120k",
-		"VideoRatings" : "9.9/10",
-		"VideoPrice" : "$9.99",
-		"VideoDescription" : "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
+		"VideoTitle": "Learn C#",
+		"VideoThumbnailUrl": "pack://application:,,,/lumentra;component/VideoThumbnails/csharpVideo.jpg",
+		"VideoAuthor": "Learn with Mike",
+		"VideoCategory": "Programming",
+		"VideoDuration": "4 Hours",
+		"VideoViews": "120k",
+		"VideoRatings": "9.9/10",
+		"VideoPrice": "$9.99",
+		"IsVideoPopular": false,
+		"VideoDescription": "Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah"
 	}
 ]

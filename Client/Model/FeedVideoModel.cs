@@ -11,11 +11,13 @@ namespace lumentra.Model
         public string VideoTitle { get; set; }
         public string VideoThumbnailUrl {get; set; }
         public string VideoAuthor { get; set; }
+        public string VideoCategory { get; set; }
         public string VideoRatings { get; set; }
         public string VideoViews { get; set; }
         public string VideoDuration { get; set; }
         public string VideoPrice { get; set; }
         public string VideoDescription { get; set; }
+        public bool IsVideoPopular { get; set; }
 
         public Uri ThumbnailUri => new Uri(VideoThumbnailUrl, UriKind.RelativeOrAbsolute);
     }
