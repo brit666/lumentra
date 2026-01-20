@@ -36,7 +36,8 @@ namespace lumentra.View
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
 
             var SearchVideos = videos.Where(
-                video => video.VideoTitle == "Learn C# with mike"
+                video => video.VideoTitle == "Learn C#" || 
+                         video.VideoTitle == "Digital Illustration and Concept Art"
             ).ToList();
 
             VideoFeed.ItemsSource = SearchVideos;
@@ -59,7 +60,9 @@ namespace lumentra.View
 
         private void VideoCard_Clicked(FeedVideoModel video)
         {
-            // Handle the video click event here
+            Window window = new VideoPlayerView();
+            window.Show();
+            this.Close();
         }
     }
 }

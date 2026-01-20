@@ -36,7 +36,7 @@
                 </Grid.ColumnDefinitions>
 
                 <TextBlock Grid.Column="0"
-                       Text="Notifications"
+                       Text="Collections"
                        FontSize="16"
                        FontWeight="Bold"
                        Foreground="AntiqueWhite"

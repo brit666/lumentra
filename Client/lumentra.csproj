@@ -23,7 +23,43 @@
     <None Remove="Assets\Images\UserIcon.png" />
     <None Remove="FeedVideos.json" />
     <None Remove="Notification.json" />
+    <None Remove="VideoDemo\CsharpVideo.mp4" />
+    <None Remove="VideoThumbnails\AiRoadmap.jpg" />
+    <None Remove="VideoThumbnails\Business.jpg" />
+    <None Remove="VideoThumbnails\BusinessAnalyst.jpg" />
+    <None Remove="VideoThumbnails\BusinessStudent.jpg" />
+    <None Remove="VideoThumbnails\Calculus.jpg" />
+    <None Remove="VideoThumbnails\Camera.jpg" />
+    <None Remove="VideoThumbnails\Cinematic.jpg" />
+    <None Remove="VideoThumbnails\CinematicComposition.jpg" />
+    <None Remove="VideoThumbnails\Cloud.jpg" />
+    <None Remove="VideoThumbnails\CloudTopic.jpg" />
+    <None Remove="VideoThumbnails\ConceptArt.jpg" />
+    <None Remove="VideoThumbnails\CookingPotato.jpg" />
+    <None Remove="VideoThumbnails\CookingSkill5.jpg" />
+    <None Remove="VideoThumbnails\CricketFitness.jpg" />
     <None Remove="VideoThumbnails\csharpVideo.jpg" />
+    <None Remove="VideoThumbnails\Discipline.jpg" />
+    <None Remove="VideoThumbnails\DSA.jpg" />
+    <None Remove="VideoThumbnails\Electronics.jpg" />
+    <None Remove="VideoThumbnails\FaceDraw.jpg" />
+    <None Remove="VideoThumbnails\Finance.jpg" />
+    <None Remove="VideoThumbnails\FullBodyWorkout.jpg" />
+    <None Remove="VideoThumbnails\HeadChef.jpg" />
+    <None Remove="VideoThumbnails\JavaScript.jpg" />
+    <None Remove="VideoThumbnails\MasterChordPattern.jpg" />
+    <None Remove="VideoThumbnails\MusicTheory.jpg" />
+    <None Remove="VideoThumbnails\Photography.jpg" />
+    <None Remove="VideoThumbnails\Photoshop.jpg" />
+    <None Remove="VideoThumbnails\Pizza.jpg" />
+    <None Remove="VideoThumbnails\Productive.jpg" />
+    <None Remove="VideoThumbnails\React.jpg" />
+    <None Remove="VideoThumbnails\SpeedTraining.jpg" />
+    <None Remove="VideoThumbnails\Teaching.jpg" />
+    <None Remove="VideoThumbnails\TheoryOfRelativity.jpg" />
+    <None Remove="VideoThumbnails\Thermodynamics.jpg" />
+    <None Remove="VideoThumbnails\Trigo.jpg" />
+    <None Remove="VideoThumbnails\Videography.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,10 +67,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="LibVLCSharp.WPF" Version="3.9.5" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="9.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.0" />
     <PackageReference Include="System.Text.Json" Version="10.0.1" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.23" />
   </ItemGroup>
 
   <ItemGroup>
@@ -80,7 +118,115 @@
     <Content Include="Notification.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="VideoDemo\CsharpVideo.mp4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="VideoThumbnails\AiRoadmap.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Business.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\BusinessAnalyst.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\BusinessStudent.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Calculus.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Camera.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Cinematic.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\CinematicComposition.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Cloud.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\CloudTopic.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\ConceptArt.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\CookingPotato.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\CookingSkill5.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\CricketFitness.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="VideoThumbnails\csharpVideo.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Discipline.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\DSA.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Electronics.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\FaceDraw.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Finance.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\FullBodyWorkout.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\HeadChef.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\JavaScript.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\MasterChordPattern.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\MusicTheory.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Photography.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Photoshop.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Pizza.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Productive.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\React.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\SpeedTraining.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Teaching.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\TheoryOfRelativity.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Thermodynamics.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Trigo.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VideoThumbnails\Videography.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

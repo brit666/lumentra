@@ -237,6 +237,7 @@
                         <TextBlock x:Name="CourseTitle"
                                    FontSize="20"
                                    FontWeight="Bold"
+                                   TextWrapping="Wrap"
                                    Foreground="FloralWhite"/>
                         <TextBlock x:Name="CourseAuthor"
                                    FontSize="15"
@@ -282,6 +283,7 @@
                                        Foreground="White"/>
                             <TextBlock x:Name="CourseDescription"
                                        FontSize="12"
+                                       TextWrapping="Wrap"
                                        Text="Anything"/>
                             <Border CornerRadius="8"
                                     HorizontalAlignment="Left"
@@ -306,62 +308,67 @@
             </Grid>
         </Grid>
         <Border Grid.Row="1"
-                CornerRadius="20"
-                Margin="0,0,0,10"
-                MaxHeight="70">
+        CornerRadius="15"
+        Margin="20,5,20,15"
+        Height="70"
+        ClipToBounds="True">
+            <!-- Outer Glow Effect -->
+            <Border.Effect>
+                <DropShadowEffect Color="#FF4169E1" BlurRadius="20" ShadowDepth="0" Opacity="0.3"/>
+            </Border.Effect>
+
             <Border.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
                     <GradientStop Color="#FF4169E1" Offset="0.0"/>
                     <!-- Royal Blue -->
                     <GradientStop Color="#FFF34F67" Offset="1.0"/>
-                    <!-- Blue Violet -->
+                    <!-- Coral Red -->
                 </LinearGradientBrush>
             </Border.Background>
+
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="210"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
-                <StackPanel>
-                    <TextBlock Text="Now Playing"
-                               VerticalAlignment="Top"
-                               FontSize="16"
-                               FontFamily="Segoe UI"
-                               FontWeight="SemiBold"
-                               Foreground="GhostWhite"
-                               Margin="15,5,0,0"/>
-                    <TextBlock Text="Song Title - Artist Name"
-                               Margin="15,5,0,0"
-                               FontFamily="Segoe UI"
-                               FontWeight="ExtraBold"
-                               Foreground="Black"
-                               FontSize="20"/>
-                </StackPanel>
-                
-                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                    <!-- Seek Left (Back 10s) -->
-                    <Button Content="&#xE892;" Style="{StaticResource GlassPlaybackButton}"/>
 
-                    <!-- Pause Button (Larger) -->
-                    <Button Content="&#xE768;" 
-                            Style="{StaticResource GlassPlaybackButton}" 
-                            Width="60" Height="60" FontSize="24">
-                        <Button.Resources>
-                            <!-- Overriding radius for the larger play button -->
-                            <Style TargetType="Border">
-                                <Setter Property="CornerRadius" Value="30"/>
-                            </Style>
-                        </Button.Resources>
-                    </Button>
-
-                    <!-- Seek Right (Forward 10s) -->
-                    <Button Content="&#xE893;" Style="{StaticResource GlassPlaybackButton}"
-                            FontFamily="Segoe MDL2 Assets"/>
+                <!-- 1. Text with subtle shadow for readability -->
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="25,0,0,0">
+                    <TextBlock Text="SPECIAL OFFER:" 
+                       Foreground="White" 
+                       FontSize="12" 
+                       FontWeight="Black" 
+                       Opacity="0.8"
+                       VerticalAlignment="Center"
+                       Margin="0,3,10,0"/>
+                    <TextBlock Text="Get 50% off your first subscription"
+                       FontSize="22"
+                       Foreground="White"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center">
+                        <TextBlock.Effect>
+                            <DropShadowEffect BlurRadius="5" ShadowDepth="1" Opacity="0.2"/>
+                        </TextBlock.Effect>
+                    </TextBlock>
                 </StackPanel>
+
+                <!-- 2. The Coupon "Pill" -->
+                <Border Grid.Column="1" 
+                Background="#30000000" 
+                BorderBrush="#40FFFFFF" 
+                BorderThickness="1.5"
+                CornerRadius="10" 
+                Margin="0,0,20,0"
+                Padding="15,8"
+                VerticalAlignment="Center"
+                Cursor="Hand">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Code: " Foreground="White" Opacity="0.7" FontSize="14"/>
+                        <TextBlock Text="LUMENTRA50" Foreground="White" FontWeight="Black" FontSize="16"/>
+                        <TextBlock Text=" &#xE8C8;" FontFamily="Segoe MDL2 Assets" Foreground="White" FontSize="12" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                    </StackPanel>
+                </Border>
             </Grid>
-           
-
         </Border>
     </Grid>
 </Window>

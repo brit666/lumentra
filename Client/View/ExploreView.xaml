@@ -326,6 +326,7 @@
                         <TextBlock x:Name="CourseTitle"
                                    FontSize="20"
                                    FontWeight="Bold"
+                                   TextWrapping="Wrap"
                                    Foreground="FloralWhite"/>
                         <TextBlock x:Name="CourseAuthor"
                                    FontSize="15"
@@ -371,6 +372,7 @@
                                        Foreground="White"/>
                             <TextBlock x:Name="CourseDescription"
                                        FontSize="12"
+                                       TextWrapping="Wrap"
                                        Text="Anything"/>
                             <Border CornerRadius="8"
                                     HorizontalAlignment="Left"
