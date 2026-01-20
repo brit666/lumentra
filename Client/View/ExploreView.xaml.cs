@@ -2,6 +2,7 @@
 using lumentra.View.UserControl;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -50,7 +51,7 @@ namespace lumentra.View
             NoResultsText.Visibility = Visibility.Collapsed;
             SearchQueryText.Text = text;
 
-            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
+            string jsonString = File.ReadAllText(App.FeedJsonPath);
 
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
 
@@ -77,8 +78,8 @@ namespace lumentra.View
 
         private void FeedVideoFetcher()
         {
-            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
-           
+            string jsonString = File.ReadAllText(App.FeedJsonPath);
+
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
 
             var SearchVideos = videos.Where(
@@ -131,6 +132,9 @@ namespace lumentra.View
 
         private void NotificationButton_Click(object sender, RoutedEventArgs e)
         {
+            Window window = new NotificationView();
+            window.Owner = this;
+            window.ShowDialog();
 
         }
 
@@ -159,7 +163,7 @@ namespace lumentra.View
 
         private void ProgrammingButton_Click(object sender, RoutedEventArgs e)
         {
-            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
+            string jsonString = File.ReadAllText(App.FeedJsonPath);
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
             var SearchVideos = videos.Where(
                 video => video.VideoCategory == "Programming"
@@ -171,7 +175,7 @@ namespace lumentra.View
 
         private void EducationButton_Click(object sender, RoutedEventArgs e)
         {
-            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
+            string jsonString = File.ReadAllText(App.FeedJsonPath);
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
             var SearchVideos = videos.Where(
                 video => video.VideoCategory == "Education"
@@ -183,7 +187,7 @@ namespace lumentra.View
 
         private void PhotographyButton_Click(object sender, RoutedEventArgs e)
         {
-            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
+            string jsonString = File.ReadAllText(App.FeedJsonPath);
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
             var SearchVideos = videos.Where(
                 video => video.VideoCategory == "Photography"
@@ -195,7 +199,7 @@ namespace lumentra.View
 
         private void MusicButton_Click(object sender, RoutedEventArgs e)
         {
-            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
+            string jsonString = File.ReadAllText(App.FeedJsonPath);
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
             var SearchVideos = videos.Where(
                 video => video.VideoCategory == "Music"
@@ -207,7 +211,7 @@ namespace lumentra.View
 
         private void ScienceButton_Click(object sender, RoutedEventArgs e)
         {
-            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
+            string jsonString = File.ReadAllText(App.FeedJsonPath);
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
             var SearchVideos = videos.Where(
                 video => video.VideoCategory == "Science"
@@ -219,7 +223,7 @@ namespace lumentra.View
 
         private void ArtButton_Click(object sender, RoutedEventArgs e)
         {
-            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
+            string jsonString = File.ReadAllText(App.FeedJsonPath);
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
             var SearchVideos = videos.Where(
                 video => video.VideoCategory == "Art"
@@ -231,7 +235,7 @@ namespace lumentra.View
 
         private void ProductivityButton_Click(object sender, RoutedEventArgs e)
         {
-            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
+            string jsonString = File.ReadAllText(App.FeedJsonPath);
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
             var SearchVideos = videos.Where(
                 video => video.VideoCategory == "Productivity"
@@ -243,7 +247,7 @@ namespace lumentra.View
 
         private void BusinessButton_Click(object sender, RoutedEventArgs e)
         {
-            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
+            string jsonString = File.ReadAllText(App.FeedJsonPath);
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
             var SearchVideos = videos.Where(
                 video => video.VideoCategory == "Business"
@@ -255,7 +259,7 @@ namespace lumentra.View
 
         private void CookingButton_Click(object sender, RoutedEventArgs e)
         {
-            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
+            string jsonString = File.ReadAllText(App.FeedJsonPath);
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
             var SearchVideos = videos.Where(
                 video => video.VideoCategory == "Cooking"
@@ -267,7 +271,7 @@ namespace lumentra.View
 
         private void SportsButton_Click(object sender, RoutedEventArgs e)
         {
-            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
+            string jsonString = File.ReadAllText(App.FeedJsonPath);
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
             var SearchVideos = videos.Where(
                 video => video.VideoCategory == "Fitness"

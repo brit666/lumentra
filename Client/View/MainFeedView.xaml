@@ -357,7 +357,7 @@
 
                     <!-- Seek Right (Forward 10s) -->
                     <Button Content="&#xE893;" Style="{StaticResource GlassPlaybackButton}"
-             FontFamily="Segoe MDL2 Assets"/>
+                            FontFamily="Segoe MDL2 Assets"/>
                 </StackPanel>
             </Grid>
            

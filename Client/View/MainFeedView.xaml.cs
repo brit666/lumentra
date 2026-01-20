@@ -2,6 +2,7 @@
 using lumentra.View.UserControl;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -28,7 +29,7 @@ namespace lumentra.View
 
         private void FeedVideoFetcher()
         {
-            string jsonString = System.IO.File.ReadAllText("D:\\C# Projects\\lumentra\\Client\\FeedVideos.json");
+            string jsonString = File.ReadAllText(App.FeedJsonPath);
             var videos = JsonSerializer.Deserialize<List<FeedVideoModel>>(jsonString);
 
             VideoFeed.ItemsSource = videos;
@@ -85,7 +86,9 @@ namespace lumentra.View
 
         private void NotificationButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Window window = new NotificationView();
+            window.Owner = this;
+            window.ShowDialog();
         }
 
         private void ProfileButton_Click(object sender, RoutedEventArgs e)
