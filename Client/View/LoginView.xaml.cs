@@ -41,9 +41,32 @@ namespace lumentra.View
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            Window window = new MainFeedView();
-            window.Show();
-            this.Close();
+            if (txtEmail.Text == "user123@gmail.com" && txtPass.Password == "12345678")
+            {
+                Window window = new MainFeedView();
+                window.Show();
+                this.Close();
+                App.UserRole = "User";
+            }
+            else if(txtEmail.Text == "admin@gmail.com" && txtPass.Password == "admin123")
+            {
+                Window window = new MainFeedView();
+                window.Show();
+                this.Close();
+                App.UserRole = "Admin";
+            }
+            else if(txtEmail.Text == "creator@gmail.com" && txtPass.Password == "87654321")
+            {
+                Window window = new MainFeedView();
+                window.Show();
+                this.Close();
+                App.UserRole = "Creator";
+            }
+            else 
+            {
+                txtEmailWarning.Visibility = Visibility.Visible;
+                txtEmailWarning.Text = "Invalid email or password.";
+            }
         }
 
         private void click_signup(object sender, MouseButtonEventArgs e)

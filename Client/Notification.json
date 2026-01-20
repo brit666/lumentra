@@ -6,38 +6,28 @@
   },
 
   {
-    "NotificationTitle": "John Commented on your video",
-    "NotificationMessage": "Great video! Learned a lot.",
+    "NotificationTitle": "John Subscribed !!",
+    "NotificationMessage": "",
     "NotificationTimeStamp": "2 hours ago"
   },
   {
-    "NotificationTitle": "John Commented on your video",
-    "NotificationMessage": "Great video! Learned a lot.",
+    "NotificationTitle": "John Purchased Your Video 'C# Tutorial for Beginners'",
+    "NotificationMessage": "",
     "NotificationTimeStamp": "2 hours ago"
   },
   {
-    "NotificationTitle": "John Commented on your video",
-    "NotificationMessage": "Great video! Learned a lot.",
-    "NotificationTimeStamp": "2 hours ago"
+    "NotificationTitle": "Mike Commented on your video",
+    "NotificationMessage": "This is some quality content",
+    "NotificationTimeStamp": "4 hours ago"
   },
   {
-    "NotificationTitle": "John Commented on your video",
-    "NotificationMessage": "Great video! Learned a lot.",
-    "NotificationTimeStamp": "2 hours ago"
+    "NotificationTitle": "Mike Purchased Your Video 'C# Tutorial for Beginners'",
+    "NotificationMessage": "",
+    "NotificationTimeStamp": "4 hours ago"
   },
   {
-    "NotificationTitle": "John Commented on your video",
-    "NotificationMessage": "Great video! Learned a lot.",
-    "NotificationTimeStamp": "2 hours ago"
-  },
-  {
-    "NotificationTitle": "John Commented on your video",
-    "NotificationMessage": "Great video! Learned a lot.",
-    "NotificationTimeStamp": "2 hours ago"
-  },
-  {
-    "NotificationTitle": "John Commented on your video",
-    "NotificationMessage": "Great video! Learned a lot.",
+    "NotificationTitle": "Bro code replied to your comment",
+    "NotificationMessage": "Appreciate it!",
     "NotificationTimeStamp": "2 hours ago"
   }
 ]

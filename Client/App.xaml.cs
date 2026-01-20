@@ -2,6 +2,7 @@
 using System.Configuration;
 using System.Data;
 using System.IO;
+using System.Security.RightsManagement;
 using System.Windows;
 
 namespace lumentra
@@ -11,6 +12,7 @@ namespace lumentra
     /// </summary>
     public partial class App : Application
     {
+        public static string UserRole { get; set; }
         public static string FeedJsonPath { get; private set; }
         public static string NotificationsJsonPath { get; private set; }    
 

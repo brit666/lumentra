@@ -1,0 +1,118 @@
+﻿<Window x:Class="lumentra.View.ProfileView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Profile" Height="550" Width="450"
+        WindowStyle="None" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"        
+        Background="Transparent" AllowsTransparency="True">
+
+    <!-- Main Styled Border matching your Notification View -->
+    <Border Background="#1A1A1A" BorderThickness="3" CornerRadius="30">
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#ff00ff" Offset="0.0"/>
+                <GradientStop Color="#0000ff" Offset="0.75"/>
+                <GradientStop Color="#00ffff" Offset="1"/>
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <!-- Header -->
+                <RowDefinition Height="Auto"/>
+                <!-- Header/Avatar -->
+                <RowDefinition Height="*"/>
+                <!-- Details/Stats -->
+            </Grid.RowDefinitions>
+
+            <!-- 1. Header (Close Button) -->
+            <Button Grid.Row="0" Content="&#xE8BB;" FontFamily="Segoe MDL2 Assets" 
+                    FontSize="12" Foreground="AntiqueWhite" Click="WinClose_Click"
+                    Background="Transparent" BorderThickness="0" 
+                    HorizontalAlignment="Right" Margin="0,0,20,0">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="border" Width="30" Height="20" CornerRadius="5" Background="{TemplateBinding Background}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="MediumVioletRed"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+            <!-- 2. Profile Header (Avatar & Name) -->
+            <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="0,10,0,20">
+                <!-- Avatar with Gradient Glow -->
+                <Border Width="100" Height="100" CornerRadius="50" Padding="3">
+                    <Border.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                            <GradientStop Color="#ff00ff" Offset="0"/>
+                            <GradientStop Color="#00ffff" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Border.Background>
+                    <Border CornerRadius="50" Background="#1A1A1A" Padding="15">
+                        <Border CornerRadius="50" ClipToBounds="True">
+                            <Image Source="/lumentra;component/Assets/Images/UserIcon.png" Stretch="UniformToFill"/>
+                        </Border>
+                    </Border>
+                </Border>
+
+                <TextBlock x:Name="UsernameText"
+                           Text="Username" FontSize="24" FontWeight="Bold" Foreground="White" 
+                           HorizontalAlignment="Center" Margin="0,10,0,0"/>
+
+                <!-- Subscriber Badge -->
+                <Border Background="#2A2A2A" CornerRadius="10" Padding="10,2" Margin="0,5" HorizontalAlignment="Center">
+                    <TextBlock x:Name="RoleBadge"
+                               Text="PREMIUM CREATOR" Foreground="#00ffff" FontSize="10" FontWeight="Bold"/>
+                </Border>
+            </StackPanel>
+
+            <!-- 3. Profile Details -->
+            <ScrollViewer Grid.Row="2" Margin="20,0,20,20">
+                <ScrollViewer.Resources>
+                    <Style TargetType="ScrollBar" BasedOn="{StaticResource ChromeScrollBar}"/>
+                </ScrollViewer.Resources>
+                <StackPanel>
+                    <!-- Stats Grid -->
+                    <Grid Margin="0,10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
+                            <TextBlock x:Name="FollowerCount"
+                                       Text="12.4k" Foreground="White" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name ="FollowerLabel"
+                                       Text="Followers" Foreground="Gray" FontSize="12" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1">
+                            <TextBlock x:Name="VideoCount"
+                                       Text="84" Foreground="White" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="VideoLabel"
+                                       Text="Videos" Foreground="Gray" FontSize="12" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Grid.Column="2">
+                            <TextBlock x:Name="ViewCount"
+                                       Text="1.2M" Foreground="White" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center"/>
+                            <TextBlock x:Name="ViewLabel"
+                                       Text="Views" Foreground="Gray" FontSize="12" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Separator Background="#333" Margin="0,20"/>
+
+                    <!-- Action Buttons -->
+                    <Button Content="Edit Profile" Style="{StaticResource LogoutButtonStyle}" Width="200" Margin="0,5"/>
+                    <Button Content="Subscription Settings" Style="{StaticResource LogoutButtonStyle}" Width="200" Margin="0,5"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </Border>
+</Window>

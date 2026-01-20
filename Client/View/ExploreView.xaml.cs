@@ -140,12 +140,16 @@ namespace lumentra.View
 
         private void ProfileButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Window window = new ProfileView();
+            window.Owner = this;
+            window.ShowDialog();
         }
 
         private void CollectionButton_Click(object sender, RoutedEventArgs e)
         {
-
+            Window window = new CollectionView();
+            window.Owner = this;
+            window.ShowDialog();
         }
 
         private void UploadButton_Click(object sender, RoutedEventArgs e)
