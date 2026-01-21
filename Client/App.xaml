@@ -14,6 +14,8 @@
                 <ResourceDictionary Source="/View/Styles/GlassButtonStyle.xaml"/>
                 <ResourceDictionary Source="/View/Styles/SearchBoxStyle.xaml"/>
                 <ResourceDictionary Source="/View/Styles/CategoryButtonStyle.xaml"/>
+                <ResourceDictionary Source="/View/Styles/NavButtonStyle.xaml"/>
+                <ResourceDictionary Source="/View/Styles/TextInput.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

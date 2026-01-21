@@ -107,6 +107,16 @@ namespace lumentra.View
 
         private void UploadButton_Click(object sender, RoutedEventArgs e)
         {
+            if (App.UserRole == "Creator")
+            {
+                Window window = new UploadsView();
+                window.ShowDialog();
+                window.Owner = this;
+            }
+            else
+            {
+                MessageBox.Show("Only creators can upload videos. Apply for creator role via our website", "Access Denied", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
 
         }
 

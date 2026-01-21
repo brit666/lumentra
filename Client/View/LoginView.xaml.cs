@@ -50,7 +50,7 @@ namespace lumentra.View
             }
             else if(txtEmail.Text == "admin@gmail.com" && txtPass.Password == "admin123")
             {
-                Window window = new MainFeedView();
+                Window window = new AdminPanelView();
                 window.Show();
                 this.Close();
                 App.UserRole = "Admin";
